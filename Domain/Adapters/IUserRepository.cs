@@ -4,10 +4,10 @@ using System.Threading.Tasks;
 
 namespace Domain.Adapters
 {
-    public interface IClubRepository
+    public interface IUserRepository
     {
-        Task<IEnumerable<Club>> GetAll();
+        Task<List<User>> GetAll();
 
-        Task<int> Insert(Club club);
+        Task<User> Insert(User user);
     }
 }

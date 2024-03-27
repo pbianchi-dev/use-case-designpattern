@@ -8,7 +8,7 @@ namespace Application
     {
         public static void AddApplicationModule(this IServiceCollection services)
         {
-            services.AddTransient<IClubService, ClubServiceManager>();
+            services.AddTransient<IUserService, UserServiceManager>();
         }
     }
 }

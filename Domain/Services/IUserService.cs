@@ -4,10 +4,10 @@ using System.Threading.Tasks;
 
 namespace Domain.Services
 {
-    public interface IClubService
+    public interface IUserService
     {
-        Task<IEnumerable<Club>> RecoverAllClubs();
+        Task<IEnumerable<User>> RecoverAllUsers();
 
-        Task<int> RegisterAClub(Club club);
+        Task<User> RegisterAUser(User user);
     }
 }

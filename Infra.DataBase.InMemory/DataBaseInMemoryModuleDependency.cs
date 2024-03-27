@@ -11,7 +11,7 @@ namespace Infra.DataBase.InMemory
     {
         public static void AddDataBaseInMemoryModule(this IServiceCollection services)
         {
-            services.AddScoped<IClubRepository, ClubRepository>();
+            services.AddScoped<IUserRepository, UserRepository>();
         }
     }
 }
