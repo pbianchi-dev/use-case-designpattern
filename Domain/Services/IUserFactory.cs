@@ -7,6 +7,6 @@ namespace Domain.Services
 {
     public interface IUserFactory
     {
-        IUser CreateUser(string userType);
+        //IUser CreateUser(string userType);
     }
 }
