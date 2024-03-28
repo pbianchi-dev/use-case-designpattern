@@ -1,4 +1,5 @@
 using Application;
+using Application.Services;
 using Infra.DataBase.InMemory;
 using Infra.Email;
 using Microsoft.AspNetCore.Builder;
@@ -21,6 +22,8 @@ namespace Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+            //services.AddSingleton<SingletonManager>();
 
             services.AddEmailModule();
             services.AddDataBaseInMemoryModule();

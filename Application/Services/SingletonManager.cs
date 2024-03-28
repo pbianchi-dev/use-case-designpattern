@@ -1,4 +1,6 @@
-﻿namespace Application.Services
+﻿using System;
+
+namespace Application.Services
 {
     public class SingletonManager
     {
@@ -24,7 +26,10 @@
             }
         }
 
-        // Add methods and properties here that will be accessible through the SingletonManager.Instance
+        public void CreateUser()
+        {
+            Console.WriteLine("you can create an user or doing whatever...");
+        }
     }
 
 }
